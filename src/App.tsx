@@ -1,9 +1,16 @@
-import { useState } from "react"
+import TodoStore from "./stores/TodoStore"
+import TodoInput from "./Todo/TodoInput"
+import TodoList from "./Todo/TodoList"
 
-function App() {
-  const [count, setCount] = useState(0)
+const todos = new TodoStore()
 
-  return <div className="App"></div>
+const App = () => {
+  return (
+    <>
+      <TodoInput todos={todos} />
+      <TodoList todos={todos} />
+    </>
+  )
 }
 
 export default App
