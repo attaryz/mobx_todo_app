@@ -8,6 +8,10 @@
     "preview": "vite preview"
   },
   "dependencies": {
+    "@chakra-ui/react": "^2.2.1",
+    "@emotion/react": "^11.9.0",
+    "@emotion/styled": "^11.8.1",
+    "framer-motion": "^6.3.11",
     "mobx": "^6.6.0",
     "mobx-react-lite": "^3.4.0",
     "react": "^18.0.0",

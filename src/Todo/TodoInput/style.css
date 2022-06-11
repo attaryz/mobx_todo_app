@@ -1,0 +1,17 @@
+.input-group {
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  align-items: center;
+  margin-top: 10rem;
+  gap: 1rem;
+}
+.input {
+  border: 2px solid #ccc;
+  padding: 2px;
+  margin: 2rem;
+  width: 10rem;
+}
+.button {
+  margin-right: 2rem;
+}

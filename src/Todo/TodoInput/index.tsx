@@ -1,5 +1,7 @@
 import { ChangeEvent, useState } from "react"
 import TodoStore from "../../stores/TodoStore"
+import { Input, Button } from "@chakra-ui/react"
+import "./style.css"
 
 const TodoInput = ({ todos }: { todos: TodoStore }) => {
   const [newTodo, setNewTodo] = useState("")
@@ -13,8 +15,22 @@ const TodoInput = ({ todos }: { todos: TodoStore }) => {
   }
   return (
     <>
-      <input type="text" value={newTodo} onChange={handleInputChange} />
-      <button onClick={handleButtonClick}>Add Todo</button>
+      <div className="input-group">
+        <Input
+          className="input"
+          type="text"
+          placeholder="Add Todo"
+          value={newTodo}
+          onChange={handleInputChange}
+        />
+        <Button
+          onClick={handleButtonClick}
+          colorScheme="teal"
+          size="md"
+          className="button">
+          Add Todo
+        </Button>
+      </div>
     </>
   )
 }
